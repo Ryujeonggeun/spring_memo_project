@@ -20,7 +20,7 @@ public class MemoResponseDto {
         this.createdAt = memo.getCreatedAt();
         this.modifiedAt = memo.getModifiedAt();
     }
-
+    //
    //jdbc 템플릿에 필요한것
 //    public MemoResponseDto(Long id, String username, String contents) {
 //        this.id = id;
