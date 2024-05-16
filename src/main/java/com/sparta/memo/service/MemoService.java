@@ -35,7 +35,7 @@ public class MemoService {
     public List<MemoResponseDto> getMemos() {
         // DB 조회
         //findAll 한것을 MemoResponseDto 타입의 리스트로 바꿔주기
-        return memoRepository.findAll().stream().map(MemoResponseDto::new).toList();
+        return memoRepository.findAllByOrderByModifiedAtDesc().stream().map(MemoResponseDto::new).toList();
     }
 
     //변경 사항에는 @Transactional 필수!!!
